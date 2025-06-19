@@ -257,15 +257,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-border/50 bg-gradient-to-br from-primary/5 to-purple-500/5">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">Enterprise Solutions</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Looking for custom enterprise solutions? Our team can help you scale.
-                  </p>
-                  <Button className="w-full bg-gradient-to-r from-primary to-purple-600">Contact Sales Team</Button>
-                </CardContent>
-              </Card>
+             
             </motion.div>
           </div>
         </div>

@@ -303,10 +303,7 @@ export default function DashboardPage() {
                 <p className="text-gray-600">Here's what's happening with your business today.</p>
               </div>
               <div className="mt-4 md:mt-0 flex items-center space-x-4">
-                <Button variant="outline" size="sm" className="btn-hover-effect">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  Last 30 days
-                </Button>
+                
                 <Button
                   variant="outline"
                   size="sm"
@@ -445,13 +442,7 @@ export default function DashboardPage() {
                       </motion.div>
                     ))}
                   </div>
-                  <Button
-                    variant="outline"
-                    className="w-full mt-4 btn-hover-effect"
-                    onClick={() => handleQuickAction("activities")}
-                  >
-                    View All Activities
-                  </Button>
+                  
                 </CardContent>
               </Card>
             </motion.div>

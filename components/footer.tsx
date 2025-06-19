@@ -5,7 +5,7 @@ import { useState } from "react"
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import { Facebook, Twitter, Github, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -79,8 +79,8 @@ const Footer = () => {
               {[
                 { icon: Facebook, href: "#" },
                 { icon: Twitter, href: "#" },
-                { icon: Instagram, href: "#" },
                 { icon: Linkedin, href: "#" },
+                { icon: Github, href: "https://github.com/" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -108,7 +108,6 @@ const Footer = () => {
               {[
                 { title: "Home", href: "/" },
                 { title: "About Us", href: "/about" },
-                { title: "Pricing", href: "/pricing" },
                 { title: "Contact", href: "/contact" },
               ].map((link, index) => (
                 <li key={index}>
@@ -123,33 +122,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Legal */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <h4 className="font-semibold text-lg mb-6">Legal</h4>
-            <ul className="space-y-3">
-              {[
-                { title: "Privacy Policy", href: "/privacy-policy" },
-                { title: "Terms of Service", href: "/terms-of-service" },
-                { title: "Data Protection", href: "/data-protection" },
-                { title: "Cookie Policy", href: "/cookie-policy" },
-                { title: "Compliance", href: "/compliance" },
-              ].map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:underline"
-                  >
-                    {link.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
 
           {/* Contact Info */}
           <motion.div
@@ -163,8 +135,6 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  
-                  <br />
                   Casablanca, Morocco
                   <br />
                   

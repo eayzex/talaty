@@ -185,20 +185,8 @@ export default function ReportsPage() {
                 <p className="text-gray-600">Comprehensive analytics and insights for your business</p>
               </div>
               <div className="mt-4 md:mt-0 flex items-center space-x-4">
-                <select
-                  value={selectedPeriod}
-                  onChange={(e) => setSelectedPeriod(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg bg-white text-sm"
-                >
-                  <option value="7d">Last 7 days</option>
-                  <option value="30d">Last 30 days</option>
-                  <option value="90d">Last 90 days</option>
-                  <option value="1y">Last year</option>
-                </select>
-                <Button variant="outline" size="sm" className="btn-hover-effect">
-                  <Filter className="h-4 w-4 mr-2" />
-                  Filter
-                </Button>
+                
+                
               </div>
             </div>
           </motion.div>

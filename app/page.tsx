@@ -241,7 +241,6 @@ export default function Home() {
                   <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
 
                   <motion.div className="mt-6 inline-flex items-center text-primary font-medium" whileHover={{ x: 5 }}>
-                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -377,7 +376,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
               >
                 <Zap className="w-4 h-4 mr-2" />
-                Join 50,000+ successful businesses
+                Join 100+ successful businesses
               </motion.div>
 
               <h2 className="text-4xl md:text-6xl font-bold mb-6">
